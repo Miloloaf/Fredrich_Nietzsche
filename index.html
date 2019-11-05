@@ -42,12 +42,14 @@
                 padding-bottom: 10px;
             }
 
-            #fred_image {
+            #image {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 50%;
+                max-width: 50%;
+                height: auto;
                 border-radius: 5%;
+                
             }
 
             hr {
@@ -70,17 +72,24 @@
                 font-size:12px;
 
             }
+
+            #img-caption{
+                text-align: center;
+                padding-top: 10px;
+                font-size: 20px;
+            }
             
         </Style>
     </head>
 
     <body>
-        <div class="background">            
-            <h1>Friedrich Nietzsche</h1>
+        <div id="main" class="background">            
+            <h1 id="title">Friedrich Nietzsche</h1>
             <h2>the German Philosopher</h2>
-            <div class="imageframe">
+            <div id ="img-div" class="imageframe">
 
-            <img id="fred_image" src="https://secretwarshome.files.wordpress.com/2019/03/29d091d0128a04e4e6e419f7a3d6a1d4.jpg?w=1200" alt="Image of Friedrich Nietzsche">
+            <img id="image" src="https://secretwarshome.files.wordpress.com/2019/03/29d091d0128a04e4e6e419f7a3d6a1d4.jpg?w=1200" alt="Image of Friedrich Nietzsche">
+            <figcaption id="img-caption"><strong>Portrait of Friedrich Nietzsche</strong></figcaption>
             </div>
 
             <hr size="5" noshade>
@@ -91,7 +100,7 @@
 
             </h2>
 
-            <ul>
+            <ul id="tribute-info">
                 <li>
                     <strong>1844</strong> - Birth of Friedrich Wilhelm Nietzsche on October 15 in Rocken.
                 </li>
@@ -152,7 +161,7 @@
 
             <h3> "To live is to suffer, to survive is to find meaning in the suffering"
                 <br>
-                - Fredrich Nietsche
+                - <a id="tribute-link" href="" target="_blank">Fredrich Nietsche</a>
             </h3>
         </div>
         
